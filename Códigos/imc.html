@@ -32,20 +32,18 @@
 
     var imc = calculaIMC(pesoInformado, alturaInformada);
 
-    document.write(nome + ",o seu IMC calculado é " + Math.round(imc));
+    document.write(nome + " ,o seu IMC calculado é " + Math.round(imc));
 
     if (imc < 18) {
-        mostra("Você está abaixo do recomendado")
+        mostra("Você está abaixo do recomendado");
     }
 
     if (imc > 38) {
-        mostra("Você está acima do recomendador")
+        mostra("Você está acima do recomendador");
     }
 
-    if (imc > 18) {
-        if (imc < 35) {
-            mostra("Seu imc está excelente")
-        }
+    if (imc >= 18 && imc <= 35) {
+        mostra("Seu imc está excelente");
     }
 
 </script>
