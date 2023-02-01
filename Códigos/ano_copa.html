@@ -20,10 +20,11 @@
         document.write(frase);
         pulaLinha();
     }
-
+    
+    var limite = parseInt(prompt("Digite com a data limite: "));
     var copa = 1930;
 
-    while (copa < 2022) {
+    while (copa <= limite) {
         mostra("Teve copa em " + copa);
         copa = copa + 4;
     }
