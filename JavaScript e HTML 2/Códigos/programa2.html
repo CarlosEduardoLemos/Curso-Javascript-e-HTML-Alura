@@ -22,9 +22,17 @@
         pincel.strokeRect(x, y, 50, 50)
     }
 
-    desenhaQuadrado(0, 0, 'blue');
-    desenhaQuadrado(0, 50, 'red');
-    desenhaQuadrado(0, 100, 'yellow');
+    var x = 0;
+    var y = 0;
+
+    while (x < 600) {
+        desenhaQuadrado(0, 0, 'blue');
+        x = x + 50;
+    }
+
+    //desenhaQuadrado(0, 0, 'blue');
+    //desenhaQuadrado(0, 50, 'red');
+    //desenhaQuadrado(0, 100, 'yellow');
 </script>
 
 </html>
