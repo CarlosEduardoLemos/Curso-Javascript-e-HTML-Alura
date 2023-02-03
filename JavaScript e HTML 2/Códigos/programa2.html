@@ -13,16 +13,18 @@
 </body>
 <canvas width="600" height="400"></canvas>
 <script>
-    function desenhaQuadrado() {
+    function desenhaQuadrado(x, y, cor) {
         var tela = document.querySelector('canvas');
         var pincel = tela.getContext('2d');
-        pincel.fillStyle = 'green';
-        pincel.fillRect(0, 0, 50, 50);
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
         pincel.fillStroke = 'black';
-        pincel.strokeRect(0, 0, 50, 50)
+        pincel.strokeRect(x, y, 50, 50)
     }
 
-    desenhaQuadrado();
+    desenhaQuadrado(0, 0, 'blue');
+    desenhaQuadrado(0, 50, 'red');
+    desenhaQuadrado(0, 100, 'yellow');
 </script>
 
 </html>
