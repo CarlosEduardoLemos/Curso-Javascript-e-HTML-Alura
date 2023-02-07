@@ -15,7 +15,7 @@
 <script>
     var tela = document.querySelector("canvas");
     var pincel = tela.getContext("2d");
-    pincel.fillStyle = 'ligthgray';
+    pincel.fillStyle = 'white';
     pincel.fillRect(0, 0, 600, 400);
 
     function desenhaCirculo(x, y, raio) {
@@ -38,7 +38,7 @@
         x++;
     }
 
-    setInterval(atualizaTela, 20);
+    setInterval(atualizaTela, 2);
 
     desenhaCirculo(20, 20, 10);
 </script>
